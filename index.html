@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1f4">
+  <meta property="og:title" content="Feliz cumpleaños, Mari 💗">
+  <meta property="og:description" content="Un álbum de recuerdos y una sorpresa de cumpleaños para Mari.">
+  <meta property="og:image" content="fotos/recuerdo-1.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💗</text></svg>">
+  <meta name="description" content="Un álbum de recuerdos y una sorpresa de cumpleaños para Mari.">
+  <title>Feliz cumpleaños, Mari 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">mari<span>♡</span>angel</a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#recuerdos">Recuerdos</a>
+      <a href="#timeline">Nuestra historia</a>
+      <a href="#carta">La carta</a>
+    </nav>
+    <button class="music-button" id="musicToggle" type="button" aria-pressed="false">♫ Activar música</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="sparkle">✦</span> EDICIÓN ESPECIAL · CUMPLEAÑOS</p>
+        <h1>¡Feliz cumple,<br><span class="pink-text">Mari!</span> 🎂</h1>
+        <p class="hero-lead">Un pequeño museo de nuestras tonterías, risas y momentos que merecen quedarse para siempre.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#recuerdos">Abrir nuestros recuerdos <span>↘</span></a>
+          <button class="button button-light" id="heroSurprise" type="button">Tengo una sorpresa ✨</button>
+        </div>
+        <p class="handwritten hero-note">Advertencia: puede contener ataques de risa y cariño excesivo.</p>
+      </div>
+      <div class="hero-art" aria-label="Decoración de álbum de recuerdos">
+        <div class="sun-doodle"></div>
+        <div class="floating-sticker sticker-star">✦</div>
+        <div class="floating-sticker sticker-heart">♡</div>
+        <div class="polaroid hero-polaroid tilt-left">
+          <div class="photo-frame hero-photo"><img src="fotos/recuerdo-1.png" alt="Un recuerdo con Mari" style="width:100%;height:100%;object-fit:cover;border-radius:2px"></div>
+          <p>Las protagonistas 💌</p>
+        </div>
+        <div class="polaroid mini-polaroid tilt-right">
+          <div class="photo-frame mini-photo"><img src="fotos/recuerdo-3.png" alt="Otro recuerdo con Mari" style="width:100%;height:100%;object-fit:cover;border-radius:2px"></div>
+          <p>caos bonito</p>
+        </div>
+        <div class="tape tape-hero"></div>
+        <span class="doodle-arrow">↝</span>
+      </div>
+      <a class="scroll-cue" href="#recuerdos">desliza para ver el álbum ↓</a>
+    </section>
+
+    <section class="section memories-section" id="recuerdos">
+      <div class="section-heading">
+        <p class="eyebrow">CAPÍTULO 01 · PRUEBAS DEL DELITO</p>
+        <h2>Recuerdos que <span class="pink-text">no se borran</span></h2>
+        <p>Fotos, momentos random y evidencia de que juntos somos un peligro 😂</p>
+      </div>
+      <div class="memory-grid">
+        <article class="polaroid memory-card tilt-left">
+          <div class="photo-frame photo-slot"><img src="fotos/recuerdo-1.png" alt="Primer recuerdo con Mari" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">📷<small>Agrega una foto</small></span></div>
+          <p>El comienzo de la historia ♡</p><span class="sticker sticker-small">icónicas</span>
+        </article>
+        <article class="polaroid memory-card tilt-right card-lift">
+          <div class="photo-frame photo-slot"><img src="fotos/recuerdo-2.png" alt="Un momento divertido con Mari" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">🤣<small>Una de nuestras locuras</small></span></div>
+          <p>¿Quién nos manda a ser así?</p><span class="sticker sticker-small sticker-yellow">JAJAJA</span>
+        </article>
+        <article class="polaroid memory-card tilt-left card-low">
+          <div class="photo-frame photo-slot"><img src="fotos/recuerdo-3.png" alt="Un recuerdo especial con Mari" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">🌷<small>Un día especial</small></span></div>
+          <p>Un día para guardar</p><span class="sticker sticker-small">♡ forever</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading">
+        <p class="eyebrow">CAPÍTULO 02 · NUESTRA HISTORIA</p>
+        <h2>Pequeños momentos,<br><span class="pink-text">grandes recuerdos</span></h2>
+        <p>Del salón de clases a la cancha de vóley: recuerdos que se quedan para siempre.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-pin">♡</div><div class="timeline-card"><span class="timeline-date">EL DÍA 1</span><h3>Cuando empezó todo</h3><p>Entre clases, tareas y conversaciones en el cole, empezó una amistad llena de bromas y anécdotas que todavía nos hacen reír. 😌</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-pin">✦</div><div class="timeline-card"><span class="timeline-date">MOMENTO ICÓNICO</span><h3>La anécdota que nunca olvidamos</h3><p>Las bromas en el cole, las ocurrencias en clase y esas miradas que bastaban para aguantarnos la risa. 😂</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-pin">☼</div><div class="timeline-card"><span class="timeline-date">SIEMPRE</span><h3>Las veces que estuvimos ahí</h3><p>Y cómo olvidar los partidos de vóley, los puntos celebrados como una final y las veces que terminábamos riéndonos más de lo que jugábamos. Gracias por esos recuerdos, Mari. 🏐💗</p></div>
+        </article>
+      </div>
+      <div class="tiny-note handwritten">Por más capítulos juntas, por favor y gracias.</div>
+    </section>
+
+    <section class="letter-section section" id="carta">
+      <div class="letter-decor decor-left">✿</div><div class="letter-decor decor-right">♡</div>
+      <article class="letter">
+        <div class="letter-top"><span>PARA: MARIANGEL</span><span>CON MUCHO CARIÑO ♡</span></div>
+        <p class="eyebrow">CAPÍTULO 03 · ABRIR CON CARIÑO</p>
+        <h2>Una cartita<br>para ti, <span class="pink-text">Mari</span></h2>
+        <div class="letter-body">
+          <p>Feliz cumpleaños, Mariangel. 💗</p>
+          <p>Hoy celebramos tus 19, Mari, y no puedo evitar acordarme de todos esos días en el cole: las clases, las bromas, las conversaciones entre recreos y las veces que nos mirábamos intentando no reírnos. Al final, hasta los días más normales se volvían buenos recuerdos contigo.</p>
+          <p>También me acuerdo de los partidos de vóley, de correr por cada pelota, celebrar los puntos como si ganáramos un campeonato y de esas veces en que la cancha se convertía en otra historia para contar. Gracias por compartir conmigo tantas locuras, dentro y fuera del cole. Son recuerdos sencillos, pero valen muchísimo para mí.</p>
+          <p>Espero que tus 19 lleguen cargados de cosas bonitas, nuevas metas, salud, risas y muchas oportunidades para seguir cumpliendo sueños. No cambies esa forma tan tuya de hacer que cualquier momento termine siendo una anécdota. Y, por favor, que nunca falten más recreos, más vóley y más historias que después recordemos muertos de risa. 🎂🏐</p>
+          <p>Gracias por ser mi amiga y por formar parte de esta etapa que siempre voy a recordar con cariño. ¡Feliz cumpleaños, Mari! Que la pases increíble y que sigamos sumando recuerdos por muchos años más. 🫶</p>
+        </div>
+        <p class="letter-signature handwritten">Con cariño y cero normalidad,<br>tu compañero de aventuras ♡</p>
+        <div class="letter-stamp">BEST<br>FRIENDS<br>♡</div>
+      </article>
+    </section>
+
+    <section class="final-section section" id="final">
+      <div class="final-star">✦</div>
+      <p class="eyebrow">ÚLTIMA PÁGINA · PERO NO EL FINAL</p>
+      <h2>¿Lista para tu<br><span class="pink-text">sorpresa?</span></h2>
+      <p>Hay algo que quería recordarte en este día tan tuyo…</p>
+      <button class="button button-primary final-button" id="surpriseButton" type="button">Pulsa aquí, cumpleañera 🎁</button>
+      <div class="surprise-message" id="surpriseMessage" hidden>
+        <div class="surprise-card">
+          <span class="surprise-emoji">🎉💗🎂</span>
+          <h3>¡Feliz cumpleaños, Mari!</h3>
+          <p>Gracias por formar parte de mis recuerdos favoritos: desde las locuras del cole hasta los partidos de vóley. Que la vida te regale mil motivos para sonreír y que sigamos acumulando historias que algún día contaremos diciendo: “¿TE ACUERDAS?” 😂</p>
+          <p class="handwritten">Te quiero mucho. ¡Hoy se celebra a la cumpleañera más icónica! ♡</p>
+          <button class="button button-light" id="moreConfetti" type="button">Más confeti, por favor ✨</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Hecho con cariño para Mariangel, de tu amigo ♡</span>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <div class="yt-player" aria-hidden="true"><div id="ytPlayer"></div></div>
+</body>
+</html>

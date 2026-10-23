@@ -1,0 +1,53 @@
+WEB DE CUMPLEAÑOS PARA MARIANGEL
+
+ARCHIVOS PRINCIPALES
+- index.html
+- style.css
+- script.js
+- fotos/ (coloca aquí tus imágenes)
+- musica/ (opcional: coloca aquí cancion.mp3)
+
+CÓMO CAMBIAR LAS FOTOS
+1. Copia tus fotos dentro de la carpeta fotos.
+2. Ponles estos nombres (en minúsculas y respetando la extensión):
+   - recuerdo-1.jpg
+   - recuerdo-2.jpg
+   - recuerdo-3.jpg
+   - recuerdo-4.jpg
+3. Para la foto grande de la portada, abre index.html y busca:
+   <div class="photo-frame hero-photo"><span>📸</span><small>pon aquí nuestra foto favorita</small></div>
+   Puedes reemplazar ese bloque por:
+   <div class="photo-frame hero-photo"><img src="fotos/portada.jpg" alt="Mari y yo"></div>
+   Luego guarda tu foto como fotos/portada.jpg.
+4. Si tus fotos son PNG, cambia el nombre del archivo y el src en index.html para que coincidan exactamente.
+5. Para cambiar textos de la línea del tiempo o la carta, edita las frases directamente en index.html.
+
+MÚSICA OPCIONAL
+- Coloca un archivo de audio MP3 que tengas permiso para usar en musica/cancion.mp3.
+- El botón de música no la inicia automáticamente; la persona debe tocarlo.
+- Si no agregas el archivo, la página funciona igualmente; el botón mostrará un aviso.
+
+PROBAR EN VISUAL STUDIO CODE
+- Abre esta carpeta en Visual Studio Code.
+- Si tienes Live Server, haz clic derecho en index.html y elige "Open with Live Server".
+- No necesita Node.js, React, npm ni compilación.
+
+PUBLICAR EN VERCEL
+1. Sube TODO el contenido de esta carpeta al repositorio GitHub.
+2. Importa el repositorio en Vercel.
+3. Application Preset: Other.
+4. Root Directory: ./ (si index.html está en la raíz del repositorio).
+5. Deja Build Command y Output Directory vacíos.
+6. Pulsa Deploy y abre el dominio .vercel.app.
+
+IMPORTANTE
+- index.html debe estar en la raíz que seleccionaste en Vercel, no dentro de una carpeta adicional.
+- Las carpetas fotos y musica también deben subirse al repositorio.
+- La web será pública para cualquiera que tenga el enlace.
+
+MÚSICA (Bruno Mars - Risk It All)
+- Suena de fondo desde el video oficial de YouTube: https://youtu.be/lY5V4hSLWY8 (necesita internet).
+- Empieza con el primer toque en cualquier parte de la página; el botón del menú dice "Activar música" / "Apagar música".
+- Funciona al publicar en Vercel o con Live Server. Con doble clic en index.html (file://) YouTube lo bloquea (error 153).
+- Si el dueño del video no permite incrustarlo (errores 101/150), guarda la canción como musica/cancion.mp3 y la web la usará automáticamente.
+- Para cambiar de canción, edita YT_ID en script.js.
